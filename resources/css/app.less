@@ -1,0 +1,37 @@
+@tailwind preflight;
+
+@font-face {
+  font-family: "hel-neue";
+  src: url("../fonts/HelveticaNeueLight.woff2"),
+    url("../fonts/HelveticaNeueLight.woff");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "hel-neue";
+  src: url("../fonts/HelveticaNeue.woff2"), url("../fonts/HelveticaNeue.woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "hel-neue";
+  src: url("../fonts/HelveticaNeueBold.woff2"),
+    url("../fonts/HelveticaNeueBold.woff");
+  font-weight: 700;
+}
+
+@tailwind utilities;
+
+.hero-banner {
+  background-image: url("../images/girls_and_seagulls.jpg");
+  background-size: cover;
+  min-height: 50vw;
+}
+
+svg {
+  fill: currentColor;
+}
+
+.flip {
+  transform: scale(-1, -1);
+}
