@@ -20,12 +20,30 @@
   font-weight: 700;
 }
 
+@font-face {
+  font-family: "hel-neue";
+  src: url("../fonts/HelveticaNeueBlack.woff2"),
+    url("../fonts/HelveticaNeueBlack.woff");
+  font-weight: 900;
+}
+
 @tailwind utilities;
 
 .hero-banner {
   background-image: url("../images/girls_and_seagulls.jpg");
   background-size: cover;
-  min-height: 50vw;
+  background-position: 50%;
+  min-height: 100vh;
+}
+
+.logo-block {
+  background-image: url("../images/main_logo.svg");
+  background-size: 100%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  padding-bottom: 25.42%;
+  height: 0;
+  opacity: 0.5;
 }
 
 svg {
@@ -34,4 +52,18 @@ svg {
 
 .flip {
   transform: scale(-1, -1);
+}
+
+.super-condensed {
+  letter-spacing: -2px;
+}
+
+@media (max-width: 576px) {
+  .logo-section {
+    order: 0;
+  }
+
+  .details-section {
+    order: 1;
+  }
 }
