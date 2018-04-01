@@ -16,6 +16,7 @@ require("laravel-mix-purgecss");
  */
 
 mix
+  .setPublicPath("public")
   .js("resources/js/index.js", "public/js/main.js")
   .less("resources/css/app.less", "public/css/main.css")
   .tailwind()
