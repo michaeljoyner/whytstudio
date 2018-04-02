@@ -58,12 +58,18 @@ svg {
   letter-spacing: -2px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .logo-section {
     order: 0;
   }
 
   .details-section {
     order: 1;
+  }
+}
+
+@media (max-width: 768px) and (max-height: 400px) {
+  .intro-section {
+    display: none;
   }
 }
